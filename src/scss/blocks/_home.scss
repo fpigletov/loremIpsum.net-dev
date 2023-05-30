@@ -1,0 +1,125 @@
+.home {
+    min-height: 850px;
+    background: url('../img/home/home-bg.jpg') center/cover no-repeat; 
+    
+    @media (max-width: $md2) {        
+        min-height: 750px;
+    }
+
+    @media (max-width: $md4) {  
+        background: rgb(237,242,245);          
+        min-height: 450px;
+    }
+
+    &__body {
+        max-width: 780px;      
+    }
+
+    &__title {
+        font-weight: 700;
+        font-size: 48px;
+        line-height: 58px;
+        color: $black-color;
+        text-transform: uppercase;
+        margin-bottom: 80px;
+
+        @media (max-width: $md2) {        
+            font-size: 36px;
+            line-height: 43px;
+            margin-bottom: 60px;
+        }
+
+        @media (max-width: $md3) {        
+            font-size: 30px;
+            line-height: 32px;
+            margin-bottom: 40px;
+        }
+
+        @media (max-width: $md4) {        
+            font-size: 22px;
+            line-height: 24px;
+            margin-bottom: 25px;
+        }
+    }
+
+    &__title span{
+        color: $blue-color;
+    }
+
+    &__descr {
+        font-size: 20px;
+        line-height: 24px;
+        color: $black-color;
+        margin-bottom: 80px;
+
+        @media (max-width: $md2) {        
+            font-size: 18px;
+            line-height: 22px;
+            margin-bottom: 60px;
+        }
+
+        @media (max-width: $md3) {        
+            font-size: 16px;
+            line-height: 18px;
+            margin-bottom: 40px;
+        }
+
+        @media (max-width: $md4) {        
+            font-size: 16px;
+            line-height: 18px;
+            margin-bottom: 25px;
+        }
+    }
+
+    &__btns {
+        display: flex;
+        align-items: center;        
+    }
+
+    &__btn {
+        height: 43px;
+        width: 183px;
+        font-size: 13px;
+        
+        @media (max-width: $md4) {        
+            width: 130px;
+        }
+        
+
+        &_blue {
+            margin-right: 30px; 
+            
+            @media (max-width: $md4) {        
+                margin-right: 20px;
+            }
+        }
+    }
+}
+
+.descr-home {
+
+    &__title {
+        font-weight: 700;        
+        margin-bottom: 10px;
+    }
+
+	&__item {
+        position: relative;
+        padding-left: 26px;
+        &:not(:last-child) {
+            margin-bottom: 5px;
+        } 
+
+        &::before {
+            position: absolute;
+            content: '';
+            top: 10px;
+            left: 10px;
+            width: 4.94px;
+            height: 1.51px;
+            background-color: $black-color;
+        }
+    }
+}
+
+
